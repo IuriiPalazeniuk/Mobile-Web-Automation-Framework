@@ -46,7 +46,7 @@ public class MyStepDefs {
             page.checkCount(Integer.parseInt(expectedCount));
         } else {
             AllFriedsPage friends = new AllFriedsPage();
-            friends.countingAllFriends();
+            friends.checkCount(Integer.parseInt(expectedCount));
         }
     }
 }

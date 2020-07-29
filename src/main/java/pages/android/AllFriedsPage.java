@@ -25,4 +25,8 @@ public class AllFriedsPage extends Page {
         return names.size();
     }
 
+    public void checkCount(int expectedCount){
+        org.testng.Assert.assertEquals(expectedCount, countingAllFriends(), "Mobile shows wrong count of friends");
+    }
+
 }
